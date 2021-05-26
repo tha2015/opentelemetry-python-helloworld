@@ -92,7 +92,7 @@ metadata:
   namespace: jaeger
 spec:
   rules:
-    - host: jaeger.info
+    - host: jaeger.minikube
       http:
         paths:
           - path: /
@@ -246,7 +246,7 @@ metadata:
   namespace: zipkin
 spec:
   rules:
-    - host: zipkin.info
+    - host: zipkin.minikube
       http:
         paths:
           - path: /
@@ -565,7 +565,7 @@ metadata:
   name: hello-ingress
 spec:
   rules:
-    - host: hello.info
+    - host: hello.minikube
       http:
         paths:
           - path: /
@@ -645,5 +645,5 @@ spec:
 ## /////////////////////////////////////// END hello service
 
 # add to hosts file
-#192.168.1.200 zipkin.info
-#192.168.1.200 jaeger.info
+#192.168.1.200 zipkin.minikube
+#192.168.1.200 zipkin.minikube
