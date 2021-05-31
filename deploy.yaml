@@ -745,6 +745,7 @@ data:
                 pip3 install --user opentelemetry-api==1.2.0 opentelemetry-sdk==1.2.0 opentelemetry-instrumentation==0.21b0 opentelemetry-distro==0.21b0  opentelemetry-exporter-otlp==1.2.0
                 pip3 install --user opentelemetry-instrumentation-flask==0.21b0 opentelemetry-instrumentation-grpc==0.21b0 opentelemetry-instrumentation-jinja2==0.21b0 opentelemetry-instrumentation-requests==0.21b0 opentelemetry-instrumentation-sqlite3==0.21b0 opentelemetry-instrumentation-urllib==0.21b0
                 export PATH=$HOME/.local/bin:$PATH
+                export OTEL_LOG_LEVEL=debug
 
                 #exec opentelemetry-bootstrap
                 #exec opentelemetry-bootstrap --action=install
